@@ -401,6 +401,43 @@ Transform:
   m_Father: {fileID: 1856428177}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &946007929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893138394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &946007933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893138394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946007929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &946007934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946007929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392237eeb64aa8b488177fdbba1c914a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeAction:
+    actionPath: /actions/default/in/CreateCube
+    needsReinit: 0
+  hand: {fileID: 0}
+  otherHand: {fileID: 1645719819}
+  cubePrefab: {fileID: 2306459751902848592, guid: 50aaa308485213d40979fb3f7bb66e72,
+    type: 3}
 --- !u!1001 &1281178158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -646,6 +683,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489781403}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1645719815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893138394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1645719819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893138394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645719815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e4511966ba94d8ba0b98c6c62f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1645719820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645719815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392237eeb64aa8b488177fdbba1c914a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeAction:
+    actionPath: /actions/default/in/CreateCube
+    needsReinit: 0
+  hand: {fileID: 0}
+  otherHand: {fileID: 946007933}
+  cubePrefab: {fileID: 2306459751902848592, guid: 50aaa308485213d40979fb3f7bb66e72,
+    type: 3}
 --- !u!1001 &1707649252
 PrefabInstance:
   m_ObjectHideFlags: 0
