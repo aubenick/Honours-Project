@@ -52,26 +52,32 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private IEnumerator GenerateCube()
         {
-            Vector3 cubePosition;
-
-            cubePosition = hand.transform.position;
+            
 
             GameObject newCube = GameObject.Instantiate<GameObject>(cubePrefab);
-            newCube.transform.position = cubePosition;
+            newCube.transform.position = (hand.transform.position + otherHand.transform.position) /2;
             newCube.transform.rotation = Quaternion.Euler(0, Random.value * 360f, 0);
 
             //newCube.GetComponentInChildren<MeshRenderer>().material.SetColor("_TintColor", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
 
             Rigidbody rigidbody = newCube.GetComponent<Rigidbody>();
 
-            Vector3 initialScale = Vector3.one * 0.01f;
-            Vector3 targetScale = Vector3.one * (1 + (Random.value * 0.25f));
+            
+
+            float x = Mathf.Abs(hand.transform.position.x - otherHand.transform.position.x);
+            float y = Mathf.Abs(hand.transform.position.y - otherHand.transform.position.y);
+            float z = Mathf.Abs(hand.transform.position.z - otherHand.transform.position.z);
+
            
+            Debug.Log("size " +  " " + x  + " " + y + " " + z);
+            Vector3 newCubeScale = new Vector3(x, y, z);
+
+            newCube.transform.localScale = newCubeScale*10;
 
             if (rigidbody != null)
                 rigidbody.isKinematic = false;
             
-            return null;
+            yield return null;
         }
     }
 }

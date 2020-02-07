@@ -37,6 +37,12 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_CreateCube;
         
+        private static SteamVR_Action_Boolean p_default_SnapTurnLeft;
+        
+        private static SteamVR_Action_Boolean p_default_SnapTurnRight;
+        
+        private static SteamVR_Action_Boolean p_default_DeleteHeldItem;
+        
         private static SteamVR_Action_Vibration p_default_Haptic;
         
         private static SteamVR_Action_Vector2 p_platformer_Move;
@@ -133,6 +139,30 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean default_SnapTurnLeft
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_SnapTurnLeft.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_SnapTurnRight
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_SnapTurnRight.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_DeleteHeldItem
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_DeleteHeldItem.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
         public static SteamVR_Action_Vibration default_Haptic
         {
             get
@@ -210,6 +240,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_CreateCube,
+                    SteamVR_Actions.default_SnapTurnLeft,
+                    SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_DeleteHeldItem,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -229,6 +262,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_CreateCube,
+                    SteamVR_Actions.default_SnapTurnLeft,
+                    SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_DeleteHeldItem,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -250,6 +286,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_GrabGrip,
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_CreateCube,
+                    SteamVR_Actions.default_SnapTurnLeft,
+                    SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_DeleteHeldItem,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset};
@@ -271,6 +310,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_CreateCube,
+                    SteamVR_Actions.default_SnapTurnLeft,
+                    SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_DeleteHeldItem,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -291,6 +333,9 @@ namespace Valve.VR
             SteamVR_Actions.p_default_Squeeze = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/Squeeze")));
             SteamVR_Actions.p_default_HeadsetOnHead = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/HeadsetOnHead")));
             SteamVR_Actions.p_default_CreateCube = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/CreateCube")));
+            SteamVR_Actions.p_default_SnapTurnLeft = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SnapTurnLeft")));
+            SteamVR_Actions.p_default_SnapTurnRight = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SnapTurnRight")));
+            SteamVR_Actions.p_default_DeleteHeldItem = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/DeleteHeldItem")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));

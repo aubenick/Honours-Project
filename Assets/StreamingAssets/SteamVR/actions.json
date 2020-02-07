@@ -45,6 +45,18 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/SnapTurnLeft",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/SnapTurnRight",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/DeleteHeldItem",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -147,7 +159,8 @@
       "/actions/default/in/Teleport": "Teleport",
       "/actions/default/out/Haptic": "Haptic",
       "/actions/platformer/in/Jump": "Jump",
-      "/actions/default/in/CreateCube": "CreateCube"
+      "/actions/default/in/CreateCube": "CreateCube",
+      "/actions/default/in/DeleteHeldItem": "DeleteHeldItem"
     }
   ]
 }
