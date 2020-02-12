@@ -141,7 +141,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onHandHoverEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2100000, guid: 5be56a64c3c6c434eb746320e06a27ac, type: 2}
+      objectReference: {fileID: 2100000, guid: bd7898f128b2a904dbc480023daa8716, type: 2}
     - target: {fileID: 1780163479602138372, guid: a7e0d7913e7d7ca40a4cefdfa056de2a,
         type: 3}
       propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -212,7 +212,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1833208363367131066, guid: a7e0d7913e7d7ca40a4cefdfa056de2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd7898f128b2a904dbc480023daa8716, type: 2}
+    m_RemovedComponents:
+    - {fileID: 1801148356381982668, guid: a7e0d7913e7d7ca40a4cefdfa056de2a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a7e0d7913e7d7ca40a4cefdfa056de2a, type: 3}
 --- !u!1001 &672052233
 PrefabInstance:
@@ -338,9 +344,14 @@ MonoBehaviour:
   cubeAction:
     actionPath: /actions/default/in/CreateCube
     needsReinit: 0
+  cycleAction:
+    actionPath: /actions/default/in/CyclePrefab
+    needsReinit: 0
   hand: {fileID: 0}
   otherHand: {fileID: 1645719819}
   cubePrefab: {fileID: 2306459751902848592, guid: 50aaa308485213d40979fb3f7bb66e72,
+    type: 3}
+  spherePrefab: {fileID: 1811263617117454780, guid: a7e0d7913e7d7ca40a4cefdfa056de2a,
     type: 3}
 --- !u!1001 &1281178158
 PrefabInstance:
@@ -490,7 +501,7 @@ Transform:
   m_GameObject: {fileID: 1477037010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 30, y: 0.1, z: 30}
+  m_LocalScale: {x: 25, y: 0.1, z: 25}
   m_Children:
   - {fileID: 672052234}
   m_Father: {fileID: 1856428177}
@@ -529,9 +540,14 @@ MonoBehaviour:
   cubeAction:
     actionPath: /actions/default/in/CreateCube
     needsReinit: 0
+  cycleAction:
+    actionPath: /actions/default/in/CyclePrefab
+    needsReinit: 0
   hand: {fileID: 0}
   otherHand: {fileID: 946007933}
   cubePrefab: {fileID: 2306459751902848592, guid: 50aaa308485213d40979fb3f7bb66e72,
+    type: 3}
+  spherePrefab: {fileID: 1811263617117454780, guid: a7e0d7913e7d7ca40a4cefdfa056de2a,
     type: 3}
 --- !u!1001 &1707649252
 PrefabInstance:
@@ -605,6 +621,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2328373165614644974, guid: 50aaa308485213d40979fb3f7bb66e72,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c000fcb1330ff644a2019f23955442c, type: 2}
+    - target: {fileID: 2419768951020323390, guid: 50aaa308485213d40979fb3f7bb66e72,
+        type: 3}
+      propertyPath: onHandHoverEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c000fcb1330ff644a2019f23955442c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50aaa308485213d40979fb3f7bb66e72, type: 3}
 --- !u!1 &1794918250
@@ -767,6 +793,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494192, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: debugHints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13693334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013281422588, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000013829830258, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}

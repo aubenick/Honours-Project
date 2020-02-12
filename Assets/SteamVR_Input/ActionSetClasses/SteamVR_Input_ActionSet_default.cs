@@ -121,6 +121,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean CyclePrefab
+        {
+            get
+            {
+                return SteamVR_Actions.default_CyclePrefab;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

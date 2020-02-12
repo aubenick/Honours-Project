@@ -59,7 +59,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5be56a64c3c6c434eb746320e06a27ac, type: 2}
+      objectReference: {fileID: 2100000, guid: 2c000fcb1330ff644a2019f23955442c, type: 2}
+    - target: {fileID: 65000010015824848, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ff842a32ab4f5e3458eb0302b832f819,
+        type: 2}
     - target: {fileID: 114000010658121184, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}
       propertyPath: overridePreviewLeftHandPrefab
@@ -76,7 +82,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onHandHoverEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2100000, guid: 5be56a64c3c6c434eb746320e06a27ac, type: 2}
+      objectReference: {fileID: 2100000, guid: 2c000fcb1330ff644a2019f23955442c, type: 2}
     - target: {fileID: 114000013394261110, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}
       propertyPath: onHeldUpdate.m_PersistentCalls.m_Calls.Array.size

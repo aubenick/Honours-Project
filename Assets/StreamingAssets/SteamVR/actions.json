@@ -57,6 +57,10 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/CyclePrefab",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -160,7 +164,8 @@
       "/actions/default/out/Haptic": "Haptic",
       "/actions/platformer/in/Jump": "Jump",
       "/actions/default/in/CreateCube": "CreateCube",
-      "/actions/default/in/DeleteHeldItem": "DeleteHeldItem"
+      "/actions/default/in/DeleteHeldItem": "DeleteHeldItem",
+      "/actions/default/in/CyclePrefab": "Cycle Prefab"
     }
   ]
 }
