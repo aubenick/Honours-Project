@@ -9,19 +9,21 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class SpawnPrefab : MonoBehaviour
     {
-        public SteamVR_Action_Boolean cubeAction;
+        public SteamVR_Action_Boolean spawnAction;
         public SteamVR_Action_Boolean cycleAction;
+        
 
         public Hand hand;
         public Hand otherHand;
 
 
         // Prefabs
-        public GameObject cubePrefab;
-        public GameObject spherePrefab;
-        private List<GameObject> prefabs;          
+        //public GameObject cubePrefab;
+        //public GameObject spherePrefab;
+        //public GameObject cylPrefab;
+        public List<GameObject> prefabs;          
 
-        private int maxPrefabs = 2;
+        private int maxPrefabs = 3;
         private int currentPrefabIndex = 0;
 
         private void OnEnable()
@@ -29,7 +31,7 @@ namespace Valve.VR.InteractionSystem.Sample
             if (hand == null)
                 hand = this.GetComponent<Hand>();
 
-            if (cubeAction == null)
+            if (spawnAction == null)
             {
                 Debug.LogError("<b>[SteamVR Interaction]</b> No CreateCube action assigned", this);
                 return;
@@ -42,17 +44,17 @@ namespace Valve.VR.InteractionSystem.Sample
             }
 
             // Add all prefabs to a list
-            prefabs = new List<GameObject> {cubePrefab, spherePrefab };
+            //prefabs = new List<GameObject> {cubePrefab, spherePrefab, cylPrefab };
 
-            cubeAction.AddOnChangeListener(OnCubeActionChange, hand.handType); 
+            spawnAction.AddOnChangeListener(OnCubeActionChange, hand.handType); 
             cycleAction.AddOnChangeListener(OnCycleActionChange, hand.handType);
         }
 
         private void OnDisable()
         {
-            if (cubeAction != null)
-                cubeAction.RemoveOnChangeListener(OnCubeActionChange, hand.handType);
-                cubeAction.RemoveOnChangeListener(OnCycleActionChange, hand.handType);
+            if (spawnAction != null)
+                spawnAction.RemoveOnChangeListener(OnCubeActionChange, hand.handType);
+                spawnAction.RemoveOnChangeListener(OnCycleActionChange, hand.handType);
 
         }
 
@@ -60,7 +62,7 @@ namespace Valve.VR.InteractionSystem.Sample
         {
             if (newValue)
             {
-                CreateNewCube();
+                CreateNewPrefab();
             }
         }
 
@@ -73,7 +75,7 @@ namespace Valve.VR.InteractionSystem.Sample
         }
 
         //Create Prefab Functions
-        public void CreateNewCube()
+        public void CreateNewPrefab()
         {
             StartCoroutine(SpawnNewPrefab());
         }

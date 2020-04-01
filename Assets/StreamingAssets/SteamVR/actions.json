@@ -41,7 +41,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/CreateCube",
+      "name": "/actions/default/in/SpawnObject",
       "type": "boolean"
     },
     {
@@ -163,7 +163,6 @@
       "/actions/default/in/Teleport": "Teleport",
       "/actions/default/out/Haptic": "Haptic",
       "/actions/platformer/in/Jump": "Jump",
-      "/actions/default/in/CreateCube": "CreateCube",
       "/actions/default/in/DeleteHeldItem": "DeleteHeldItem",
       "/actions/default/in/CyclePrefab": "Cycle Prefab"
     }

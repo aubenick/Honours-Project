@@ -89,11 +89,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean CreateCube
+        public virtual SteamVR_Action_Boolean SpawnObject
         {
             get
             {
-                return SteamVR_Actions.default_CreateCube;
+                return SteamVR_Actions.default_SpawnObject;
             }
         }
         
