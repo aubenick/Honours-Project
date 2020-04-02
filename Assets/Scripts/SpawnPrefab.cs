@@ -18,12 +18,9 @@ namespace Valve.VR.InteractionSystem.Sample
 
 
         // Prefabs
-        //public GameObject cubePrefab;
-        //public GameObject spherePrefab;
-        //public GameObject cylPrefab;
-        public List<GameObject> prefabs;          
+        public List<GameObject> prefabs;
 
-        private int maxPrefabs = 3;
+        private int maxPrefabs;
         private int currentPrefabIndex = 0;
 
         private void OnEnable()
@@ -44,8 +41,7 @@ namespace Valve.VR.InteractionSystem.Sample
             }
 
             // Add all prefabs to a list
-            //prefabs = new List<GameObject> {cubePrefab, spherePrefab, cylPrefab };
-
+            maxPrefabs = prefabs.Count;
             spawnAction.AddOnChangeListener(OnCubeActionChange, hand.handType); 
             cycleAction.AddOnChangeListener(OnCycleActionChange, hand.handType);
         }
@@ -86,9 +82,8 @@ namespace Valve.VR.InteractionSystem.Sample
 
             GameObject newPrefab = GameObject.Instantiate<GameObject>(prefabs[currentPrefabIndex]);
             newPrefab.transform.position = (hand.transform.position + otherHand.transform.position) /2;
-            newPrefab.transform.rotation = Quaternion.Euler(0, Random.value * 360f, 0);
+            //newPrefab.transform.rotation = Quaternion.Euler(0, Random.value * 360f, 0);
 
-            //newCube.GetComponentInChildren<MeshRenderer>().material.SetColor("_TintColor", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
 
             Rigidbody rigidbody = newPrefab.GetComponent<Rigidbody>();
 
