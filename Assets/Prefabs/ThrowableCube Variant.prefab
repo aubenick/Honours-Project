@@ -60,6 +60,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2c000fcb1330ff644a2019f23955442c, type: 2}
+    - target: {fileID: 23000011290666768, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 65000010015824848, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}
       propertyPath: m_Material
@@ -82,6 +87,21 @@ PrefabInstance:
         type: 3}
       propertyPath: useHandObjectAttachmentPoint
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: hideHandOnAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: hideSkeletonOnAttach
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: handFollowTransform
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}

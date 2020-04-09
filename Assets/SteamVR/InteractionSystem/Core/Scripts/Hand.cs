@@ -375,6 +375,7 @@ namespace Valve.VR.InteractionSystem
             attachedObject.attachedOffsetTransform = attachmentOffset;
             attachedObject.attachTime = Time.time;
 
+
             //Two-Hand scaling
             if (otherHand.ObjectIsAttached(objectToAttach))
             {

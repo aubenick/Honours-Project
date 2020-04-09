@@ -106,8 +106,10 @@ namespace Valve.VR.InteractionSystem.Sample
 
 
             if (rigidbody != null)
+            {
                 rigidbody.isKinematic = false;
-            
+                rigidbody.mass = newCubeScale.magnitude;
+            }
             yield return null;
         }
 
