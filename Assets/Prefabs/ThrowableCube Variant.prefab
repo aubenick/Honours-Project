@@ -101,7 +101,17 @@ PrefabInstance:
     - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}
       propertyPath: handFollowTransform
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: attachEaseIn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010687615738, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: snapAttachEaseInTime
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0,
         type: 3}
@@ -122,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onHeldUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013394261110, guid: fb710a001890d9a44bb74a8ce4f20cc0,
+        type: 3}
+      propertyPath: attachmentFlags
+      value: 44
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000011933169550, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
